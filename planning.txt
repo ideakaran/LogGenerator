@@ -1,0 +1,9 @@
+1. Create a config folder that contains column name, type and size of txt.
+
+
+Cases:
+1. If there already log sending started, make sure we notify it.
+2. Make sure to send an email when the process has completed
+3. Incase of an error then make sure to send an email. If there is no heartbeat,
+ ensure the server is down.
+ 4. Try determining rate. Make sure to check system metrics

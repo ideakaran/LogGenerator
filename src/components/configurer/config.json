@@ -1,0 +1,86 @@
+{
+    "fields": [
+        {
+            "destination": {
+                "value": "",
+                "description": "Destination IP address or hostname",
+                "type": "string"
+            },
+            "rate": {
+                "value": 1000,
+                "description": "Rate of messages to send per second",
+                "type": "number"
+            },
+            "port": {
+                "value": 712,
+                "description": "Destination port number",
+                "type": "number"
+            },
+            "num_logs": {
+                "value": 10000,
+                "description": "Total number of logs to send",
+                "type": "number"
+            },
+            "source": {
+                "value": "",
+                "description": "Source IP address or hostname",
+                "type": "string"
+            },
+            "protocol": {
+                "value": "tcp",
+                "description": "Protocol to use for sending messages (tcp, udp)",
+                "type": "string"
+            },
+            "ssl_cert": {
+                "value": "",
+                "description": "Path to SSL/TLS certificate file",
+                "type": "string"
+            },
+            "ssl_key": {
+                "value": "",
+                "description": "Path to SSL/TLS key file",
+                "type": "string"
+            },
+            "username": {
+                "value": "",
+                "description": "Username for authentication",
+                "type": "string"
+            },
+            "password": {
+                "value": "",
+                "description": "Password for authentication",
+                "type": "string"
+            },
+            "message_format": {
+                "value": "{timestamp} {level} {content}",
+                "description": "Format string for log messages. Supported placeholders: {timestamp}, {level}, {content}, {hostname}, {hostnumber}, {user}, {epoch}",
+                "type": "string"
+            },
+            "message_content": {
+                "value": {},
+                "description": "JSON object containing additional data to include in log messages",
+                "type": "object"
+            },
+            "hostname_format": {
+                "value": "{hostname}{hostnumber}",
+                "description": "Format string for generating hostnames. Supported placeholders: {hostname}, {hostnumber}",
+                "type": "string"
+            },
+            "epoch": {
+                "value": "123",
+                "description": "Epoch time to include in log messages",
+                "type": "string",
+                "options": [
+                    "123",
+                    "456",
+                    "789"
+                ]
+            },
+            "user": {
+                "value": "test",
+                "description": "Name of the user generating the log messages",
+                "type": "string"
+            }
+        }
+    ]
+}

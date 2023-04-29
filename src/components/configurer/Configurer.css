@@ -1,0 +1,12 @@
+.lg__config-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lg__config-fieldLabel {
+    margin: 0.5rem;
+}
+
+button[type="submit"] {
+    margin: 1rem;
+}
